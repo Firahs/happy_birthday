@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Happy Birthday janpakhii 💕 — A romantic love letter from Sharif" />
+  <title>Happy Birthday Monii 💕</title>
+
+  <!-- Google Fonts: Galada, Noto Serif Bengali, Great Vibes, Playfair Display, Inter, Hind Siliguri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Galada&family=Great+Vibes&family=Noto+Serif+Bengali:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       FLOATING HEARTS BACKGROUND
+       ═══════════════════════════════════════════════════ -->
+  <div id="floating-hearts-bg" aria-hidden="true"></div>
+  <canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════════════════════════════════════════
+       MUSIC TOGGLE
+       ═══════════════════════════════════════════════════ -->
+  <button id="music-toggle" class="music-btn" aria-label="Toggle music">
+    <span class="music-icon">🎵</span>
+  </button>
+  <audio id="bg-music" loop preload="auto">
+    <source src="cute_happy_birthday.mp3" type="audio/mpeg" />
+    <source src="happy-birthday.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ═══════════════════════════════════════════════════
+       SIDE NAVIGATION
+       ═══════════════════════════════════════════════════ -->
+  <nav id="side-nav" class="side-nav hidden" aria-label="Section navigation">
+    <a href="#love-letter" class="nav-dot" data-label="Letter"></a>
+    <a href="#we-together" class="nav-dot" data-label="Us"></a>
+    <a href="#cat-section" class="nav-dot" data-label="Cat"></a>
+    <a href="#cuteeee-section" class="nav-dot" data-label="Cute"></a>
+    <a href="#funny-section" class="nav-dot" data-label="Funny"></a>
+    <a href="#nostalgia-section" class="nav-dot" data-label="Memory"></a>
+    <a href="#sari-section" class="nav-dot" data-label="Sari"></a>
+    <a href="#ai-section" class="nav-dot" data-label="AI"></a>
+    <a href="#activities" class="nav-dot" data-label="Games"></a>
+    <a href="#closing" class="nav-dot" data-label="End"></a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════
+       INTRO SCREEN
+       ═══════════════════════════════════════════════════ -->
+  <section id="intro-screen" class="intro-screen">
+    <div class="intro-content">
+      <div class="envelope-icon">
+        <div class="envelope-body">
+          <div class="envelope-heart">💌</div>
+        </div>
+      </div>
+      <p class="tap-text">Tap to Open 💌</p>
+      <p class="tap-text-sub">A surprise awaits...</p>
+      <div class="pulse-ring"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════════════════════════════ -->
+  <main id="main-content" class="main-content hidden">
+
+    <!-- ─── BIRTHDAY REVEAL ─── -->
+    <section id="birthday-reveal" class="section birthday-reveal">
+      <div class="confetti-container" id="confetti-container"></div>
+      <!-- Floating balloons -->
+      <div class="birthday-balloons" id="birthday-balloons" aria-hidden="true"></div>
+      <div class="reveal-content">
+        <h1 id="birthday-title" class="birthday-title" aria-label="Happy Birthday Monii"></h1>
+        <p class="birthday-subtitle" id="birthday-subtitle">May Allah bless you with a long, beautiful life, and let you
+          live forever in happiness. Ameen. 🤲❤️ ♾️</p>
+        <div class="birthday-emojis">🎂🎉🎈💕</div>
+        <div class="scroll-hint" id="scroll-hint">
+          <span>Scroll down</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         LOVE LETTER
+         ═══════════════════════════════════════════════════ -->
+    <section id="love-letter" class="section love-letter-section">
+      <h2 class="section-title script-font animate-on-scroll">A Letter For You 💌</h2>
+      <div class="letter-envelope" id="letter-envelope">
+        <div class="envelope-outer">
+          <div class="wax-seal">❤️</div>
+          <p class="tap-letter-text">Tap to open 💌</p>
+        </div>
+        <div class="letter-paper" id="letter-paper">
+          <div class="letter-content">
+            <p class="letter-date">১৭ সেপ্টেম্বর, ২০২৬</p>
+            <p class="letter-greeting script-font">প্রিয়তমা,</p>
+            <p>তোমার হাসি যেন<br>আমার নীরব জীবনের সবচেয়ে সুন্দর কবিতা,<br>তোমার উপস্থিতি যেন<br>শূন্য আকাশে হঠাৎ জ্বলে
+              ওঠা পূর্ণিমার চাঁদ।</p>
+            <p>তোমার জন্মদিনে<br>শুধু এই প্রার্থনাই করি—<br>তোমার প্রতিটি প্রভাত হোক ফুলের মতো স্নিগ্ধ,<br>প্রতিটি
+              সন্ধ্যা হোক প্রশান্তিতে পূর্ণ।</p>
+            <p>তুমি থেকো আমার হৃদয়ের নিকটতম প্রান্তে,<br>আমি সারাজীবন তোমাকে ভালোবাসিয়া যাব।</p>
+            <p>আজ, আগামীকাল,<br>সময়ের শেষ প্রহর অবধি—<br><span style="color: var(--red-deep); font-weight: 600;">I love
+                you, প্রিয়তমা। ❤️</span></p>
+            <p class="letter-closing script-font">চিরকাল তোমার,<br />Sharif 💕</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         WE TOGETHER — COUPLE PHOTOS CAROUSEL
+         ═══════════════════════════════════════════════════ -->
+    <section id="we-together" class="section we-together-section">
+      <div class="section-divider"><span class="divider-emoji">👩‍❤️‍👨</span></div>
+      <h2 class="section-title script-font animate-on-scroll">Our Story 👩‍❤️‍👨</h2>
+      <p class="section-subtitle animate-on-scroll">You make my life beautiful. ❤️
+        💕</p>
+      <div class="hero-carousel" id="hero-carousel">
+        <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Previous">❮</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carousel-track">
+            <div class="carousel-slide">
+              <img src="photos/we_together/DSC_1323.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Together... always ♥</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/DSC_1464.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Every moment with you ✨</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG-20250410-WA0006.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Our beautiful day 🌸</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG-20250430-WA0003.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Two of us, one world 💑</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG-20250701-WA0045.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Beautiful day 💝</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG-20250701-WA0052.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Colors of our love 🌹</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG-20250701-WA0053.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Yours forever 💍</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG-20260909-WA0038.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Those days with you 🧣</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG20220827134840_01.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Walking hand in hand 🤝</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20220827_152421.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">You are my everything 💫</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20221124_161701.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">I love you today, tomorrow, and always 💕</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20250701_100534_0924.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Pure happiness with you 💖</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20251210_122516162_HDR.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">My forever partner 👩‍❤️‍👨</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20251210_122520818_HDR.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Every smile with you is magic ✨</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20251210_122538941_HDR.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Where my heart belongs 🏠</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/IMG_20251210_122541778_HDR.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Holding your hand forever 🤝</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/Messenger_creation_C1FF6C88-64C8-47D9-B60E-77AC79AAD39B.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Best memories of my life 🌟</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/Messenger_creation_F79CBAC0-1079-4D89-A7F5-870E4B93E378.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">My sweetest companion 🍯</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20220919_123053580.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Forever grateful for you 🌸</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20220919_123103964.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Two hearts beating as one 💓</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20220919_130044708.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">You & me against the world 🌍</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20220919_130048241.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">My favourite love story 📖</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165115260.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">In your arms is peace 🕊️</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165148966.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">A journey of endless love 🚀</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165250854.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">My sunshine on cloudy days ☀️</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165255451.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Growing old with you 💫</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165325125.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Love you more every single day 💕</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165420477.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Your smile is my greatest treasure 💎</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165427298.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">True love found in you 🌹</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_165457248.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Always and forever mine 🔒</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_170504862.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">The love of my life ❤️</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_171650646.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Every beat of my heart 💓</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/PXL_20250214_171651505.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">You make life so sweet 🍬</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-25-13.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Unconditional love 🌺</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-46-29.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">To infinity and beyond ♾️</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-46-30.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">My favorite view is you 👀</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-46-32.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Warm hugs & sweet smiles 🤗</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-48-55.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Our fairytale come true 🏰</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-48-56.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Blessed to have you 🤲</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-48-57.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Never letting you go 💖</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-49-12.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">Eternally yours 💕</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="photos/we_together/photo_2025-12-16_02-50-29.jpg" alt="couple photo" loading="lazy">
+              <p class="slide-caption">My heart, my Monii ❤️</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Next">❯</button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <div class="carousel-counter-badge" id="hero-counter">1 / 42</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CAT / BILAI SECTION (INTERACTIVE SLIDESHOW)
+         ═══════════════════════════════════════════════════ -->
+    <section id="cat-section" class="section cat-section">
+      <div class="section-divider"><span class="divider-emoji">≽^•⩊•^≼</span></div>
+      <h2 class="section-title script-font animate-on-scroll">I Want To Be Your Bilai 🐱</h2>
+      <p class="section-subtitle animate-on-scroll">Let me be your kitty 🐾</p>
+
+      <div class="cat-banner animate-on-scroll">
+        <p class="cat-message">I want to be your bilai...<br>Curled up in your lap, purring and napping 🐾💕</p>
+        <button class="cat-pet-btn" id="cat-pet-btn">i love you ,meowww 🐾</button>
+      </div>
+
+      <div class="carousel-container cat-carousel-container animate-on-scroll">
+        <button class="carousel-arrow cat-carousel-prev" id="cat-carousel-prev" aria-label="Previous">❮</button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="cat-carousel-track">
+            <div class="carousel-slide cat-slide">
+              <img src="photos/cat/IMG-20250408-WA0013.jpg" alt="bilai" loading="lazy">
+              <div class="cat-paw-badge">🐾</div>
+              <p class="slide-caption">Curled up warm in your arms 💕</p>
+            </div>
+            <div class="carousel-slide cat-slide">
+              <img src="photos/cat/IMG-20250508-WA0001.jpg" alt="bilai" loading="lazy">
+              <div class="cat-paw-badge">🐾</div>
+              <p class="slide-caption">I want to be your vondo bilai forever 🐱</p>
+            </div>
+            <div class="carousel-slide cat-slide">
+              <img src="photos/cat/IMG-20251010-WA0002.jpg" alt="bilai" loading="lazy">
+              <div class="cat-paw-badge">🐾</div>
+              <p class="slide-caption">Sleepy purrs & sweetest naps 💤</p>
+            </div>
+            <div class="carousel-slide cat-slide">
+              <img src="photos/cat/IMG-20251010-WA0006.jpg" alt="bilai" loading="lazy">
+              <div class="cat-paw-badge">🐾</div>
+              <p class="slide-caption">The sweetest duo in the world ✨</p>
+            </div>
+            <div class="carousel-slide cat-slide">
+              <img src="photos/cat/IMG-20251010-WA0008.jpg" alt="bilai" loading="lazy">
+              <div class="cat-paw-badge">🐾</div>
+            </div>
+            <div class="carousel-slide cat-slide">
+              <img src="photos/cat/IMG-20251010-WA0009.jpg" alt="bilai" loading="lazy">
+              <div class="cat-paw-badge">🐾</div>
+              <p class="slide-caption">Always cozy right next to you 💖</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow cat-carousel-next" id="cat-carousel-next" aria-label="Next">❯</button>
+        <div class="carousel-dots cat-carousel-dots" id="cat-carousel-dots"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CUTEEEE SECTION (INTERACTIVE SLIDESHOW)
+         ═══════════════════════════════════════════════════ -->
+    <section id="cuteeee-section" class="section cuteeee-section">
+      <div class="section-divider"><span class="divider-emoji">🥰</span></div>
+      <h2 class="section-title script-font animate-on-scroll">My cutepie 🥰</h2>
+      <p class="section-subtitle animate-on-scroll">Every little expression melts my heart 💕</p>
+
+      <div class="carousel-container cute-carousel-container animate-on-scroll">
+        <button class="carousel-arrow cute-carousel-prev" id="cute-carousel-prev" aria-label="Previous">❮</button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="cute-carousel-track">
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250331-WA0012.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Sunshine ☀️</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250411-WA0005.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Angel Smile 👼</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250428-WA0005.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Pure Sweetness 🍯</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250428-WA0006.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Heart Melter 💓</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250428-WA0007.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Cutest Eyes 👀✨</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250509-WA0009.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Little Queen 👑</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250509-WA0012.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Spring Blossom 🌷</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250511-WA0016.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Innocent Charm 🌸</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250511-WA0017.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Precious Moment 💎</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250527-WA0001.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Irresistible 🥰</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250527-WA0002.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Endless Cuteness 💕</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250607-WA0025.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Winter Fairy ❄️</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250615-WA0000.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Forever Adorable 💖</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250615-WA0003.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Favorite Face 😊</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0019.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">100% Perfection 💫</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0021.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">So Sweet 🍬</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0026.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Cutie Pie 🥧</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0027.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Soft & Gentle 🕊️</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0030.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Baby Monii 🧸</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0032.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Princess Vibes 👑</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0033.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Golden Hour Glow ✨</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250908-WA0034.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Dimple Queen 🌸</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20250925-WA0003.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Cute Fairy 🧚</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20251111-WA0003.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Cutest Laugh 😆</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20251111-WA0004.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Melting Heart 🫠</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260105-WA0024.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Precious Soul 🤍</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260105-WA0026.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Pure Magic 🪄</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260105-WA0027.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Sweetest Dream 🌙</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260106-WA0013.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Doll Face 🎀</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260106-WA0015.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Blooming Rose 🌹</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260110-WA0004.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Sparkling Joy 🌟</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260323-WA0005.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Cutest Person Alive 💗</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260324-WA0004.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Gentle Angel 🪽</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260826-WA0011.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Sunshine Smile ☀️</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0005.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Sweet Love 🍯</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0018.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Pretty in Pink 💖</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0019.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Pure Bliss ✨</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0020.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Heart Stealer 💘</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0021.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Adorable Always 🥰</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0022.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Little Star ⭐</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0023.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Sweetest Expressions 😚</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0024.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Lovely Monii 🌷</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0025.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Treasure 💎</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0026.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Enchanting 🌸</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0027.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Grace & Charm 🕊️</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0028.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Happiness Personified 🌈</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0029.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Radiant Beauty 💫</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG-20260909-WA0030.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Simply Cute 🤍</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/IMG_20260909_115143.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Favorite Smile 🌸</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/Messenger_creation_06F703DA-8F18-4B63-8473-A3804F487C52.jpeg" alt="cute" loading="lazy">
+              <span class="cute-tag">Always Glowing 🌟</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/Screenshot_2025-05-28-10-28-00-58_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Endless Love 💕</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/Screenshot_2026-06-15-10-31-07-47_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Precious Monii 👑</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/Screenshot_2026-06-19-14-45-05-61_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">My Forever Cute 💖</span>
+            </div>
+            <div class="carousel-slide cute-slide">
+              <img src="photos/cuteeee/photo_2025-12-16_02-25-56.jpg" alt="cute" loading="lazy">
+              <span class="cute-tag">Angel on Earth 🪽</span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow cute-carousel-next" id="cute-carousel-next" aria-label="Next">❯</button>
+        <div class="carousel-dots cute-carousel-dots" id="cute-carousel-dots"></div>
+        <div class="carousel-counter-badge" id="cute-counter">1 / 54</div>
+      </div>
+      <p class="carousel-subhint">Swipe or tap arrows • Tap photo for heart bursts 💖</p>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         FUNNY SECTION (MYSTERY HIDDEN & TAP TO UNVEIL)
+         ═══════════════════════════════════════════════════ -->
+    <section id="funny-section" class="section funny-section">
+      <div class="section-divider"><span class="divider-emoji">😂</span></div>
+      <h2 class="section-title script-font animate-on-scroll">Top Secret Moments 😂</h2>
+      <p class="section-subtitle animate-on-scroll">🤫 Classified goofiness — Tap each card to unlock! 🤣</p>
+
+      <div class="funny-controls animate-on-scroll">
+        <button class="funny-btn" id="reveal-all-funny-btn">Reveal All 😜</button>
+        <button class="funny-btn outline" id="hide-all-funny-btn">Hide All 🙈</button>
+        <button class="funny-btn outline" id="toggle-funny-view-btn">📱 Grid View (27)</button>
+      </div>
+
+      <!-- FUNNY CAROUSEL (ROTATING SLIDESHOW - ALL 27 SECRETS) -->
+      <div class="carousel-container funny-carousel-container animate-on-scroll" id="funny-carousel-container">
+        <button class="carousel-arrow funny-carousel-prev" id="funny-carousel-prev" aria-label="Previous">❮</button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="funny-carousel-track">
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #1 😂">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #1</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😂</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/IMG-20260825-WA0006.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😂</div>
+                  <span class="funny-badge">sundor lagtese 📸</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #2 🤣">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #2</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤣</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/IMG-20260826-WA0009.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤣</div>
+                  <span class="funny-badge">hasiii ta onkrSundor 👑</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #3 😆">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #3</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😆</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/IMG-20260826-WA0010.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😆</div>
+                  <span class="funny-badge">cutecutee</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #4 😜">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #4</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😜</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/IMG-20260826-WA0013.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😜</div>
+                  <span class="funny-badge">Derp Mode 🤪</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #5 🤪">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #5</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤪</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/IMG-20260828-WA0011.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤪</div>
+                  <span class="funny-badge"> hii</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #6 😸">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #6</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😸</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/IMG-20260828-WA0012.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😸</div>
+                  <span class="funny-badge">Evidence Recorded 📑</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #7 😹">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #7</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😹</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-01-25-22-31-12-46_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😹</div>
+                  <span class="funny-badge">.·°՞(≧ᗜ≦)՞°·. </span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #8 🤭">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #8</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤭</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-01-27-15-04-46-48_e307a3f9df9f380ebaf106e1dc980bb6.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤭</div>
+                  <span class="funny-badge">Iconic Laugh 💥</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #9 🤡">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #9</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤡</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-01-28-14-56-43-77_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤡</div>
+                  <span class="funny-badge">Legendary 👑</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #10 😂">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #10</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😂</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-02-11-21-42-29-06_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😂</div>
+                  <span class="funny-badge">Pure Goofiness 🤪</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #11 🤣">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #11</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤣</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-02-17-21-38-22-19_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤣</div>
+                  <span class="funny-badge">Can’t Stop Laughing 😂</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #12 😆">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #12</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😆</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-05-25-19-50-07-46_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😆</div>
+                  <span class="funny-badge"> 🌙</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #13 😜">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #13</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😜</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-05-26-20-02-05-69_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😜</div>
+                  <span class="funny-badge">Cuteness Overload 😜</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #14 🤪">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #14</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤪</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-06-15-16-47-54-36_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤪</div>
+                  <span class="funny-badge">Secret Files 🤫</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #15 😸">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #15</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😸</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-06-15-17-27-58-00_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😸</div>
+                  <span class="funny-badge">Super Funny 🤣</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #16 😹">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #16</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😹</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-06-15-17-28-18-07_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😹</div>
+                  <span class="funny-badge">Master of Memes 🎭</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #17 🤭">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #17</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤭</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-06-15-17-32-41-79_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤭</div>
+                  <span class="funny-badge">Laugh Attack ⚡</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #18 🤡">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #18</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤡</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-07-15-19-57-41-95_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤡</div>
+                  <span class="funny-badge">💥</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #19 😂">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #19</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😂</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-07-15-19-57-46-13_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😂</div>
+                  <span class="funny-badge">Priceless Reaction 😲</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #20 🤣">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #20</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤣</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-07-15-19-59-48-82_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤣</div>
+                  <span class="funny-badge">Golden Moment 🌟</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #21 😆">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #21</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😆</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-11-21-18-54-48-68_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😆</div>
+                  <span class="funny-badge">Mischief Managed 🪄</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #22 😜">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #22</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😜</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2025-12-20-14-39-56-72_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😜</div>
+                  <span class="funny-badge">Too Cute to Be Mad 🥰</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #23 🤪">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #23</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤪</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2026-02-18-12-31-01-09_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤪</div>
+                  <span class="funny-badge">LOL Moment 😆</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #24 😸">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #24</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😸</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2026-02-18-12-31-10-06_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😸</div>
+                  <span class="funny-badge">Crazy & Sweet 😜</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #25 😹">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #25</div>
+                  <p class="funny-mystery-desc">Tap to reveal 😹</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2026-08-28-15-48-28-64_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">😹</div>
+                  <span class="funny-badge">Drama Queen 🎭</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #26 🤭">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #26</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤭</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/Screenshot_2026-09-14-11-03-57-32_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤭</div>
+                  <span class="funny-badge">My Silly Monii 💖</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide funny-slide">
+              <div class="funny-card is-hidden" data-meme="Secret #27 🤡">
+                <div class="funny-cover">
+                  <div class="funny-lock-icon">🔒</div>
+                  <div class="funny-mystery-title">Classified Goofiness #27</div>
+                  <p class="funny-mystery-desc">Tap to reveal 🤡</p>
+                </div>
+                <div class="funny-inner">
+                  <img src="photos/funny/photo_2025-12-16_02-40-04.jpg" alt="funny" loading="lazy">
+                  <div class="laugh-emoji">🤡</div>
+                  <span class="funny-badge"> 👑</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow funny-carousel-next" id="funny-carousel-next" aria-label="Next">❯</button>
+        <div class="carousel-counter-badge" id="funny-counter">1 / 27</div>
+      </div>
+      <p class="carousel-subhint" id="funny-hint">Swipe or tap arrows to rotate through all 27 secrets 🔄 • Tap card to reveal 😜</p>
+
+      <!-- ALL 27 FUNNY CARDS IN GRID (TOGGLEABLE) -->
+      <div class="funny-grid" id="funny-grid" style="display: none;">
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #1 😂">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #1</div>
+            <p class="funny-mystery-desc">Tap to reveal 😂</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/IMG-20260825-WA0006.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😂</div>
+            <span class="funny-badge">sundor lagtese 📸</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #2 🤣">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #2</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤣</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/IMG-20260826-WA0009.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤣</div>
+            <span class="funny-badge">hasiii ta onkrSundor 👑</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #3 😆">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #3</div>
+            <p class="funny-mystery-desc">Tap to reveal 😆</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/IMG-20260826-WA0010.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😆</div>
+            <span class="funny-badge">cutecutee</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #4 😜">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #4</div>
+            <p class="funny-mystery-desc">Tap to reveal 😜</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/IMG-20260826-WA0013.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😜</div>
+            <span class="funny-badge">Derp Mode 🤪</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #5 🤪">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #5</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤪</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/IMG-20260828-WA0011.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤪</div>
+            <span class="funny-badge"> hii</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #6 😸">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #6</div>
+            <p class="funny-mystery-desc">Tap to reveal 😸</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/IMG-20260828-WA0012.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😸</div>
+            <span class="funny-badge">Evidence Recorded 📑</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #7 😹">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #7</div>
+            <p class="funny-mystery-desc">Tap to reveal 😹</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-01-25-22-31-12-46_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😹</div>
+            <span class="funny-badge">.·°՞(≧ᗜ≦)՞°·. </span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #8 🤭">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #8</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤭</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-01-27-15-04-46-48_e307a3f9df9f380ebaf106e1dc980bb6.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤭</div>
+            <span class="funny-badge">Iconic Laugh 💥</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #9 🤡">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #9</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤡</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-01-28-14-56-43-77_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤡</div>
+            <span class="funny-badge">Legendary 👑</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #10 😂">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #10</div>
+            <p class="funny-mystery-desc">Tap to reveal 😂</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-02-11-21-42-29-06_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😂</div>
+            <span class="funny-badge">Pure Goofiness 🤪</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #11 🤣">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #11</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤣</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-02-17-21-38-22-19_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤣</div>
+            <span class="funny-badge">Can’t Stop Laughing 😂</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #12 😆">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #12</div>
+            <p class="funny-mystery-desc">Tap to reveal 😆</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-05-25-19-50-07-46_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😆</div>
+            <span class="funny-badge"> 🌙</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #13 😜">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #13</div>
+            <p class="funny-mystery-desc">Tap to reveal 😜</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-05-26-20-02-05-69_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😜</div>
+            <span class="funny-badge">Cuteness Overload 😜</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #14 🤪">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #14</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤪</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-06-15-16-47-54-36_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤪</div>
+            <span class="funny-badge">Secret Files 🤫</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #15 😸">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #15</div>
+            <p class="funny-mystery-desc">Tap to reveal 😸</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-06-15-17-27-58-00_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😸</div>
+            <span class="funny-badge">Super Funny 🤣</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #16 😹">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #16</div>
+            <p class="funny-mystery-desc">Tap to reveal 😹</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-06-15-17-28-18-07_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😹</div>
+            <span class="funny-badge">Master of Memes 🎭</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #17 🤭">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #17</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤭</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-06-15-17-32-41-79_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤭</div>
+            <span class="funny-badge">Laugh Attack ⚡</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #18 🤡">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #18</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤡</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-07-15-19-57-41-95_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤡</div>
+            <span class="funny-badge">💥</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #19 😂">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #19</div>
+            <p class="funny-mystery-desc">Tap to reveal 😂</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-07-15-19-57-46-13_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😂</div>
+            <span class="funny-badge">Priceless Reaction 😲</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #20 🤣">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #20</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤣</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-07-15-19-59-48-82_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤣</div>
+            <span class="funny-badge">Golden Moment 🌟</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #21 😆">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #21</div>
+            <p class="funny-mystery-desc">Tap to reveal 😆</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-11-21-18-54-48-68_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😆</div>
+            <span class="funny-badge">Mischief Managed 🪄</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #22 😜">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #22</div>
+            <p class="funny-mystery-desc">Tap to reveal 😜</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2025-12-20-14-39-56-72_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😜</div>
+            <span class="funny-badge">Too Cute to Be Mad 🥰</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #23 🤪">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #23</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤪</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2026-02-18-12-31-01-09_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤪</div>
+            <span class="funny-badge">LOL Moment 😆</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #24 😸">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #24</div>
+            <p class="funny-mystery-desc">Tap to reveal 😸</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2026-02-18-12-31-10-06_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😸</div>
+            <span class="funny-badge">Crazy & Sweet 😜</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #25 😹">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #25</div>
+            <p class="funny-mystery-desc">Tap to reveal 😹</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2026-08-28-15-48-28-64_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">😹</div>
+            <span class="funny-badge">Drama Queen 🎭</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #26 🤭">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #26</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤭</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/Screenshot_2026-09-14-11-03-57-32_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤭</div>
+            <span class="funny-badge">My Silly Monii 💖</span>
+          </div>
+        </div>
+        <div class="funny-card is-hidden animate-on-scroll" data-meme="Secret #27 🤡">
+          <div class="funny-cover">
+            <div class="funny-lock-icon">🔒</div>
+            <div class="funny-mystery-title">Classified Goofiness #27</div>
+            <p class="funny-mystery-desc">Tap to reveal 🤡</p>
+          </div>
+          <div class="funny-inner">
+            <img src="photos/funny/photo_2025-12-16_02-40-04.jpg" alt="funny" loading="lazy">
+            <div class="laugh-emoji">🤡</div>
+            <span class="funny-badge"> 👑</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         NOSTALGIA SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section id="nostalgia-section" class="section nostalgia-section">
+      <div class="section-divider"><span class="divider-emoji">📸</span></div>
+      <h2 class="section-title script-font animate-on-scroll">Down Memory Lane 📸</h2>
+      <p class="section-subtitle animate-on-scroll">Those days... feels like just yesterday ✨</p>
+      <div class="filmstrip-scroll" id="filmstrip-scroll">
+        <div class="filmstrip-track">
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/DSC_1469.jpg" alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">That beautiful day...</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/IMG20220827134704_01.jpg" alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">Remember this?</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/PXL_20221124_142332785.jpg" alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">Time stood still...</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/PXL_20230127_115639078.jpg" alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">Wish we could go back</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/Screenshot_2022-12-22-10-51-39-85_965bbf4d18d205f782c6b8409c5773a4-1.jpg"
+              alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">That winter evening ❄️</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/Screenshot_2022-12-22-10-51-39-85_965bbf4d18d205f782c6b8409c5773a4.jpg"
+              alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">Priceless moment 💎</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/received_927800734844111.jpg" alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">So many memories... 🌸</p>
+            <div class="film-holes bottom"></div>
+          </div>
+          <div class="vintage-card animate-on-scroll">
+            <div class="film-holes top"></div>
+            <img src="photos/nostalgia/IMG_20260916_185623.jpg" alt="nostalgia" loading="lazy">
+            <p class="vintage-caption">Forever and ever ♾️</p>
+            <div class="film-holes bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SARI SECTION — ROYAL PRINCESS SHOWCASE
+         ═══════════════════════════════════════════════════ -->
+    <section id="sari-section" class="section sari-section">
+      <div class="section-divider"><span class="divider-emoji">👑</span></div>
+      <h2 class="section-title script-font animate-on-scroll">শাড়িতে আপনাকে সেই লাগে 😘❤️
+        👑</h2>
+      <p class="section-subtitle animate-on-scroll">In a sari, you look like a queen descended from heaven 💃✨</p>
+
+      <!-- ROYAL SHOWCASE CONTAINER -->
+      <div class="sari-showcase-container animate-on-scroll">
+        <div class="royal-badge">✨ Queen of My Heart ✨</div>
+        <div class="sari-spotlight" id="sari-spotlight">
+          <div class="royal-frame">
+            <div class="royal-corner tl">✦</div>
+            <div class="royal-corner tr">✦</div>
+            <div class="royal-corner bl">✦</div>
+            <div class="royal-corner br">✦</div>
+            <img id="sari-spotlight-img" src="photos/pori_with_sarii/IMG-20250908-WA0006.jpg"
+              alt="Princess Monii in Sari" loading="lazy">
+            <div class="sari-spotlight-overlay">
+              <div class="sari-compliment-box" id="sari-compliment-box">You are so beautiful! 💕</div>
+              <div class="sari-counter" id="sari-counter">1 / 12</div>
+            </div>
+            <button class="royal-nav-btn royal-prev-btn" id="sari-prev-btn" aria-label="Previous">❮</button>
+            <button class="royal-nav-btn royal-next-btn" id="sari-next-btn" aria-label="Next">❯</button>
+          </div>
+        </div>
+
+        <p class="royal-quote script-font" id="sari-quote">"Every time I see you in a sari, my breath stops..." 🌹</p>
+
+        <!-- ROYAL THUMBNAIL STRIP -->
+        <div class="sari-thumb-strip" id="sari-thumb-strip">
+          <button class="sari-thumb active" data-index="0" data-src="photos/pori_with_sarii/IMG-20250908-WA0006.jpg"
+            data-compliment="You are so beautiful! 💕"
+            data-quote="&quot;Every time I see you in a sari, my breath stops... 🌹&quot;"><img
+              src="photos/pori_with_sarii/IMG-20250908-WA0006.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="1" data-src="photos/pori_with_sarii/IMG-20250908-WA0007.jpg"
+            data-compliment="Princess Monii 👑"
+            data-quote="&quot;A true princess in traditional elegance. ✨&quot;"><img
+              src="photos/pori_with_sarii/IMG-20250908-WA0007.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="2" data-src="photos/pori_with_sarii/IMG-20250908-WA0008.jpg"
+            data-compliment="You look stunning in a sari! ✨"
+            data-quote="&quot;Pure magic draped in silk. 💫&quot;"><img
+              src="photos/pori_with_sarii/IMG-20250908-WA0008.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="3" data-src="photos/pori_with_sarii/IMG-20250930-WA0002.jpg"
+            data-compliment="No one is as beautiful as you 🌹"
+            data-quote="&quot;No jewel shines brighter than your smile. 💎&quot;"><img
+              src="photos/pori_with_sarii/IMG-20250930-WA0002.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="4" data-src="photos/pori_with_sarii/IMG-20250930-WA0032.jpg"
+            data-compliment="You look so gorgeous! 😍"
+            data-quote="&quot;Eyes that tell a thousand love stories. 👀💕&quot;"><img
+              src="photos/pori_with_sarii/IMG-20250930-WA0032.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="5" data-src="photos/pori_with_sarii/IMG-20251004-WA0003.jpg"
+            data-compliment="Fairy or Monii? 🧚"
+            data-quote="&quot;An angel who wandered into my life. 🪽&quot;"><img
+              src="photos/pori_with_sarii/IMG-20251004-WA0003.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="6" data-src="photos/pori_with_sarii/IMG-20251004-WA0004.jpg"
+            data-compliment="My princess 💎"
+            data-quote="&quot;Royal grace in every single fold. 👑&quot;"><img
+              src="photos/pori_with_sarii/IMG-20251004-WA0004.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="7" data-src="photos/pori_with_sarii/IMG-20251125-WA0000.jpg"
+            data-compliment="You are my most beautiful dream 🌙"
+            data-quote="&quot;My sweetest dream come true. 🌙&quot;"><img
+              src="photos/pori_with_sarii/IMG-20251125-WA0000.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="8" data-src="photos/pori_with_sarii/IMG-20251125-WA0001.jpg"
+            data-compliment="A goddess in sari! 🔥"
+            data-quote="&quot;Breathtaking from every angle. 🔥&quot;"><img
+              src="photos/pori_with_sarii/IMG-20251125-WA0001.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="9" data-src="photos/pori_with_sarii/IMG-20260323-WA0002.jpg"
+            data-compliment="My eyes light up when I see you 👀💕"
+            data-quote="&quot;The centerpiece of my entire universe. 🌟&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0002.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="10" data-src="photos/pori_with_sarii/IMG-20260323-WA0003.jpg"
+            data-compliment="Monii means beautiful 🌸"
+            data-quote="&quot;The definition of elegance and beauty. 🌺&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0003.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="11" data-src="photos/pori_with_sarii/IMG-20260323-WA0004.jpg"
+            data-compliment="The jewel of my eyes ✨"
+            data-quote="&quot;Forever the queen of my heart. 💍&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0004.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="12" data-src="photos/pori_with_sarii/IMG-20260323-WA0006.jpg"
+            data-compliment="Breathtaking elegance 🌹"
+            data-quote="&quot;Redefining royalty with every glance. 👑&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0006.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="13" data-src="photos/pori_with_sarii/IMG-20260323-WA0007.jpg"
+            data-compliment="Pure perfection 💎"
+            data-quote="&quot;Simplicity and royalty combined. ✨&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0007.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="14" data-src="photos/pori_with_sarii/IMG-20260323-WA0008.jpg"
+            data-compliment="Moonlight in human form 🌙"
+            data-quote="&quot;Brighter than a thousand stars. 🌟&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0008.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="15" data-src="photos/pori_with_sarii/IMG-20260323-WA0009.jpg"
+            data-compliment="Traditional Queen 👑"
+            data-quote="&quot;Bengali beauty at its finest. 🌺&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0009.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="16" data-src="photos/pori_with_sarii/IMG-20260323-WA0010.jpg"
+            data-compliment="Eyes full of enchantment 👀✨"
+            data-quote="&quot;Captivating my soul every time. 💓&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0010.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="17" data-src="photos/pori_with_sarii/IMG-20260323-WA0011.jpg"
+            data-compliment="A poetic vision 📜"
+            data-quote="&quot;Words fail to describe such grace. 🌷&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0011.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="18" data-src="photos/pori_with_sarii/IMG-20260323-WA0016.jpg"
+            data-compliment="Graceful beyond words 🕊️"
+            data-quote="&quot;A symphony of poise and beauty. 🌸&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0016.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="19" data-src="photos/pori_with_sarii/IMG-20260323-WA0017.jpg"
+            data-compliment="My angel in saree 🪽"
+            data-quote="&quot;Heaven brought to earth. 💖&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0017.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="20" data-src="photos/pori_with_sarii/IMG-20260323-WA0018.jpg"
+            data-compliment="Radiant royal glow 💫"
+            data-quote="&quot;Shining like pure gold. 👑&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0018.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="21" data-src="photos/pori_with_sarii/IMG-20260323-WA0019.jpg"
+            data-compliment="Sweetest Bengali bride 👰"
+            data-quote="&quot;The girl of all my dreams. 💕&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260323-WA0019.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="22" data-src="photos/pori_with_sarii/IMG-20260909-WA0004.jpg"
+            data-compliment="Royalty personified 👑"
+            data-quote="&quot;A queen who needs no throne. 🌹&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260909-WA0004.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="23" data-src="photos/pori_with_sarii/IMG-20260909-WA0006.jpg"
+            data-compliment="Incomparable charm 🌸"
+            data-quote="&quot;None can compare to your beauty. 💎&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260909-WA0006.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="24" data-src="photos/pori_with_sarii/IMG-20260909-WA0007.jpg"
+            data-compliment="Heartthrob Monii 💓"
+            data-quote="&quot;You take my breath away every second. 🔥&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260909-WA0007.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="25" data-src="photos/pori_with_sarii/IMG-20260909-WA0008.jpg"
+            data-compliment="Sweet simplicity 🌷"
+            data-quote="&quot;Natural elegance, pure heart. 🤍&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260909-WA0008.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="26" data-src="photos/pori_with_sarii/IMG-20260909-WA0009.jpg"
+            data-compliment="Mesmerizing look ✨"
+            data-quote="&quot;Lost in your eyes forever. 👀&quot;"><img
+              src="photos/pori_with_sarii/IMG-20260909-WA0009.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="27" data-src="photos/pori_with_sarii/Messenger_creation_023B1114-A958-4557-8331-F81C93773FE0.jpeg"
+            data-compliment="A timeless beauty ⏳"
+            data-quote="&quot;Elegance that never fades. 🌹&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_023B1114-A958-4557-8331-F81C93773FE0.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="28" data-src="photos/pori_with_sarii/Messenger_creation_09106B4B-1080-4071-852C-BFBBADE80E8F.jpeg"
+            data-compliment="My golden girl 🌟"
+            data-quote="&quot;Light of my life, crown of my heart. 👑&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_09106B4B-1080-4071-852C-BFBBADE80E8F.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="29" data-src="photos/pori_with_sarii/Messenger_creation_2539E700-0864-48BB-9E53-B17358265274.jpeg"
+            data-compliment="Draped in beauty 💃"
+            data-quote="&quot;Every colour suits you perfectly. 🎨&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_2539E700-0864-48BB-9E53-B17358265274.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="30" data-src="photos/pori_with_sarii/Messenger_creation_259C8B48-F19E-4A9F-86BB-E56E0626449B.jpeg"
+            data-compliment="Heavenly presence 🕊️"
+            data-quote="&quot;Peace and beauty in one vision. 🌸&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_259C8B48-F19E-4A9F-86BB-E56E0626449B.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="31" data-src="photos/pori_with_sarii/Messenger_creation_2CE8774A-E59C-4CB4-B7C8-06F82DD0667F.jpeg"
+            data-compliment="Unmatched grace 💎"
+            data-quote="&quot;Beauty that commands admiration. ✨&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_2CE8774A-E59C-4CB4-B7C8-06F82DD0667F.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="32" data-src="photos/pori_with_sarii/Messenger_creation_35AAC102-C446-4BD2-9ED5-685D585F2FD5.jpeg"
+            data-compliment="Princess of my soul 👑"
+            data-quote="&quot;Ruling my thoughts day and night. 💖&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_35AAC102-C446-4BD2-9ED5-685D585F2FD5.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="33" data-src="photos/pori_with_sarii/Messenger_creation_3B286CBE-5841-4572-83F6-A5DCF9D82965.jpeg"
+            data-compliment="Enchantress 🌺"
+            data-quote="&quot;Casting a love spell on me always. 🪄&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_3B286CBE-5841-4572-83F6-A5DCF9D82965.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="34" data-src="photos/pori_with_sarii/Messenger_creation_40608919-ACE2-47DB-ADC5-63E353955BCD.jpeg"
+            data-compliment="A vision in saree 🌹"
+            data-quote="&quot;My favorite style on you. 💕&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_40608919-ACE2-47DB-ADC5-63E353955BCD.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="35" data-src="photos/pori_with_sarii/Messenger_creation_65B865E7-F3B0-4F69-B317-C18FFDF4D096.jpeg"
+            data-compliment="Eternal elegance ♾️"
+            data-quote="&quot;Grace that belongs in art galleries. 🖼️&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_65B865E7-F3B0-4F69-B317-C18FFDF4D096.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="36" data-src="photos/pori_with_sarii/Messenger_creation_E71A72D1-5DF4-4A19-8D3C-6D7B65887D04.jpeg"
+            data-compliment="My heart skips a beat 💓"
+            data-quote="&quot;Still falling in love every single day. 🌸&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_E71A72D1-5DF4-4A19-8D3C-6D7B65887D04.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="37" data-src="photos/pori_with_sarii/Messenger_creation_E9EEF80F-3A79-4F4F-BEDA-41019606D77D.jpeg"
+            data-compliment="Pure royalty 👑"
+            data-quote="&quot;Dignified, gorgeous, perfect. 💎&quot;"><img
+              src="photos/pori_with_sarii/Messenger_creation_E9EEF80F-3A79-4F4F-BEDA-41019606D77D.jpeg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="38" data-src="photos/pori_with_sarii/PXL_20250214_164731244.jpg"
+            data-compliment="Sweet flower in saree 🪷"
+            data-quote="&quot;Blooming with endless charm. 🌷&quot;"><img
+              src="photos/pori_with_sarii/PXL_20250214_164731244.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="39" data-src="photos/pori_with_sarii/PXL_20250214_165955399.jpg"
+            data-compliment="My queen forever 💍"
+            data-quote="&quot;Nothing matches your glow. ✨&quot;"><img
+              src="photos/pori_with_sarii/PXL_20250214_165955399.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="40" data-src="photos/pori_with_sarii/PXL_20250214_170010113.jpg"
+            data-compliment="Splendid grace 🌟"
+            data-quote="&quot;A breathtaking masterpiece. 💖&quot;"><img
+              src="photos/pori_with_sarii/PXL_20250214_170010113.jpg" alt="thumb"></button>
+          <button class="sari-thumb" data-index="41" data-src="photos/pori_with_sarii/PXL_20250214_171826955.PORTRAIT.jpg"
+            data-compliment="Forever my Monii 💕"
+            data-quote="&quot;The love of my life, always. 👑&quot;"><img
+              src="photos/pori_with_sarii/PXL_20250214_171826955.PORTRAIT.jpg" alt="thumb"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         AI DREAMS SECTION (COSMIC SLIDESHOW)
+         ═══════════════════════════════════════════════════ -->
+    <section id="ai-section" class="section ai-section">
+      <div class="section-divider"><span class="divider-emoji">🌌</span></div>
+      <h2 class="section-title script-font animate-on-scroll">Our Dream World 🌌</h2>
+      <p class="section-subtitle animate-on-scroll">Our love story painted across the cosmos 🌙✨</p>
+
+      <div class="carousel-container ai-carousel-container animate-on-scroll">
+        <button class="carousel-arrow ai-carousel-prev" id="ai-carousel-prev" aria-label="Previous">❮</button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="ai-carousel-track">
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/IMG-20260909-WA0034.jpg" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">A universe created just for our love 🌌</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/IMG-20260909-WA0035.jpg" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Where time stands still with you ⏳✨</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/IMG-20260910-WA0008.jpg" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Walking hand in hand through our fairy tale 🏰</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/IMG-20260910-WA0016.jpg" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">You are my living dream, today and forever 🌙</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000003648243a0f15f469ea62f9c.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Two souls connected across galaxies 🚀💫</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000009188210a304ec9a4852e719.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Our love in infinite vibrant dimensions 🔮</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000016b081f5a2b04163d7e818d9.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Written in the constellations forever 🌠</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000020e481f6a6c403d1433ae51a.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Forever and beyond into eternity ♾️💕</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_000000003de8820e899818d3ad925cac.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Cosmic romance among the stars ✨</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_000000003fa881f5b85c97bb30c39461.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">A love that transcends all dimensions 🌌</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000043748230853b04dd20acde5e.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Dreamscapes painted with your colors 🎨</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000053a881fa9234e6d43d474a98.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Under the aurora of our love 🌌</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000679081fa8204c6814466280b.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Celestial fairy tale with my queen 👑</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000068248230bdb85f116a0bc8d0.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Infinite cosmos, only one you 🪐</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_0000000082ec81faabccf62424bc0533.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Starlight shining through your eyes 💫</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000c0b481f5a656cc6934d73580.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">A love story written by the universe 🌟</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000c3748211a879925a88309659.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Floating through dream clouds together ☁️</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000d6f481fa98aef31ec5fadf01.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Eternal cosmic harmony 🎵</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000ef1882308b35a854d08e75c6.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Our sacred universe of two 🌌</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000f74081f5b665eb50cd181efd.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Galactic beauty, endless love 🚀</p>
+            </div>
+            <div class="carousel-slide ai-slide">
+              <img src="photos/AI/file_00000000fa5c81fa86539e2368b30ea1.png" alt="AI Dream" loading="lazy">
+              <div class="ai-cosmic-glow"></div>
+              <p class="slide-caption">Dreaming with you forever 🌙</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow ai-carousel-next" id="ai-carousel-next" aria-label="Next">❯</button>
+        <div class="carousel-dots ai-carousel-dots" id="ai-carousel-dots"></div>
+        <div class="carousel-counter-badge" id="ai-counter">1 / 21</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         INTERACTIVE ACTIVITIES
+         ═══════════════════════════════════════════════════ -->
+    <section id="activities" class="section activities-section">
+      <div class="section-divider"><span class="divider-emoji">💝</span></div>
+      <h2 class="section-title script-font animate-on-scroll">Made With Love 💝</h2>
+
+      <!-- WHY I LOVE YOU — FLIP CARDS -->
+      <div class="activity-block animate-on-scroll">
+        <h3 class="activity-title">Why I Love You 💖</h3>
+        <p class="activity-desc">Tap each card to discover a reason</p>
+        <div class="flip-cards-grid" id="flip-cards-grid">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>1</span>🤍</div>
+              <div class="flip-card-back">
+                <p>You are such a beautiful soul, and your goodness makes you truly special. 🤍</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>2</span>🌸</div>
+              <div class="flip-card-back">
+                <p>Your kind heart is one of the most beautiful things about you. 🌸</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>3</span>🫶</div>
+              <div class="flip-card-back">
+                <p>You are so caring and compassionate; you genuinely feel for others. 🫶</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>4</span>✨</div>
+              <div class="flip-card-back">
+                <p>Your beauty is not only in your face, but also in the purity of your heart. ✨</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>5</span>🌷</div>
+              <div class="flip-card-back">
+                <p>You are incredibly helpful and always willing to be there for others. 🌷</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>6</span>🕊️</div>
+              <div class="flip-card-back">
+                <p>Your soft and gentle heart makes being around you feel so peaceful. 🕊️</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>7</span>💗</div>
+              <div class="flip-card-back">
+                <p>The way you care about people shows how beautiful you are from within. 💗</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>8</span>🌹</div>
+              <div class="flip-card-back">
+                <p>You have a warmth in your heart that makes everyone feel valued and loved. 🌹</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><span>9</span>❤️</div>
+              <div class="flip-card-back">
+                <p>Because you are you — kind, caring, beautiful, and wonderfully pure-hearted. ❤️</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOVE METER -->
+      <div class="activity-block animate-on-scroll">
+        <h3 class="activity-title">Love Meter 💓</h3>
+        <p class="activity-desc">Tap the heart to fill up our love!</p>
+        <div class="love-meter-container">
+          <div class="love-meter-bar">
+            <div class="love-meter-fill" id="love-meter-fill"></div>
+            <span class="love-meter-percent" id="love-meter-percent">0%</span>
+          </div>
+          <p class="love-meter-message" id="love-meter-message">Tap the heart to start! 💓</p>
+          <button class="love-meter-btn" id="love-meter-btn" aria-label="Increase love meter">
+            <span class="love-meter-heart">💓</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- SECRET SURPRISE -->
+      <div class="activity-block animate-on-scroll">
+        <div class="secret-surprise-container">
+          <button class="secret-btn" id="secret-btn"><span>Tap for a secret 💝</span></button>
+          <div class="secret-reveal" id="secret-reveal">
+            <div class="hug-animation" id="hug-animation">
+              <span class="hug-emoji">🤗</span>
+              <div class="hug-message">
+                <p class="script-font">i love you,ummmmmah!</p>
+                <p>I can't imagine a single day without you. You are my everything, Monii. Never forget that. 💕</p>
+                <p class="script-font">I love you endlessly ♾️</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CLOSING SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section id="closing" class="section closing-section">
+      <div class="closing-content animate-on-scroll">
+        <div class="closing-names script-font">
+          <span>Sharif</span>
+          <span class="closing-heart">❤️</span>
+          <span>Monii</span>
+        </div>
+        <div class="infinity-hearts" id="infinity-hearts">
+          <svg class="infinity-svg" viewBox="0 0 200 100" aria-label="Infinity symbol made of hearts">
+            <path id="infinity-path" class="infinity-path"
+              d="M 50,50 C 50,20 0,20 0,50 C 0,80 50,80 50,50 C 50,20 100,20 100,50 C 100,80 50,80 50,50"
+              transform="translate(50, 0)" />
+          </svg>
+        </div>
+        <p class="closing-message script-font">Here's to forever, my love 💕</p>
+        <p class="closing-year">♾️ 2022 — Forever ♾️</p>
+      </div>
+      <div class="falling-petals" id="falling-petals" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       LIGHTBOX MODAL
+       ═══════════════════════════════════════════════════ -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <img class="lightbox-image" id="lightbox-image" alt="Full size photo">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
